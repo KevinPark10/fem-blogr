@@ -33,8 +33,8 @@ nav {
     justify-content: space-around;
     color: white;
     font-family: Ubuntu;
-    max-width: 100%;
     overflow: hidden;
+    max-width: 100%;
     margin: 2rem auto;
 }
 
@@ -54,6 +54,7 @@ nav {
 
 .nav__account--setup {
     display: flex;
+    align-items: center;
     margin-left: 1em;
 }
 
@@ -231,6 +232,7 @@ nav {
     color: white;
     background-image: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
     height: 50vh;
+    min-height: 300px;
     border-radius: 0 5rem 0 5rem;
 }
 
@@ -300,6 +302,7 @@ nav {
     margin-top: 10rem;
     max-width: 100%;
     height: 50vh;
+    min-height: 300px;
     font-family: Ubuntu;
     color: white;
     background-color: hsl(240, 10%, 16%);
@@ -315,7 +318,7 @@ nav {
     width: 80%;
 }
 
-.product-list {
+.product-list, .company-list, .connect-list {
     display: flex;
     flex-direction: column;
 }
@@ -332,7 +335,7 @@ nav {
 
 @media (max-width: 768px) {
     * {
-        border: 1px black solid;
+        /* border: 1px black solid; */
     }
 }
 
@@ -343,5 +346,121 @@ nav {
 
     .nav__logo--dropdown__dropdown, .nav__account--setup {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        font-size: 1rem;
+    }
+
+    /* FIRST SECTION */
+
+
+    /* SECOND SECTION */
+    .title2 {
+    }
+
+    .title2__subtitle-editor-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .title2__subtitle-container {
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+    .title2__subtitle1-container, .title2__subtitle2-container {
+        width: 100%;
+    }
+
+    .title2__subtitle1, .title2__subtitle2, .title2__subtitle1__desc, .title2__subtitle2__desc {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .title2__subtitle1__desc, .title2__subtitle2__desc {
+        margin-top: 1rem;
+    }
+
+    .title2__illustration-editor-container {
+        margin-top: 3rem;
+        width: 80%;
+    }
+
+    /* THIRD SECTION */
+    .third-section__container {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .third-section__container__phones-container {
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .third-section__container__content-container {
+        width: 80%;
+        margin-bottom: 5rem;
+        max-width: none;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    /* FOURTH SECTION */
+    .fourth-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .illustration-laptop-container {
+        width: 80%;
+    }
+
+    .fourth-section__content-containers {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .fourth-section__title1, .fourth-section__title2 {
+        margin-top: 3rem;
+    }
+
+    .fourth-section__subtitle1, .fourth-section__subtitle2 {
+        margin-top: 1rem;
+    }
+
+    /* FIFTH SECTION */
+    .fifth-section {
+        height: 100%;
+    }
+
+    .fifth-section-contents {
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-container {
+        margin: 5rem 0;
+    }
+
+    .product-list, .company-list, .connect-list {
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .product-footer, .company-footer, .connect-footer {
+        margin-bottom: 1rem;
+    }
+
+    .connect-list {
+        margin-bottom: 5rem;
     }
 }
